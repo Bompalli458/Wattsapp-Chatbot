@@ -1,0 +1,177 @@
+version: "3.1"
+
+stories:
+  - story: greet and  greet_based_on_time
+    steps:
+      - intent: greet
+#      - action: utter_greet
+      - action: action_greet_based_on_time
+#      - action: action_custom
+#      - action: utter_Thankyou
+
+#  - story: Apply loan path
+#    steps:
+#      - intent: greet
+#      - action: action_greet_based_on_time
+#      - intent: apply_efundzz_loan
+#        entities:
+#          - content_type: "apply"
+#      - slot_was_set:
+#          - content_type: "apply"
+#      - action: kind_of_loans
+
+  - story: Apply personalLoan path
+    steps:
+      - intent: apply_loan
+        entities:
+          - content_type: "apply"
+      - slot_was_set:
+          - content_type: "apply"
+      - action: kind_of_loans
+      - intent: apply_personal_loan
+      - action: utter_apply_personal_loans
+#
+#  - story: Apply personalLoan
+#    steps:
+#      - intent: apply_personal_loan
+#      - action: utter_apply_personal_loans
+
+  - story: Apply BusinessLoan path
+    steps:
+      - intent: apply_loan
+        entities:
+          - content_type: "apply"
+      - slot_was_set:
+          - content_type: "apply"
+      - action: kind_of_loans
+      - intent: apply_Business_loan
+      - action: utter_kind_of_Businesssloan
+#
+#  - story: Apply BusinessLoan
+#    steps:
+#      - intent: apply_Business_loan
+#      - action: utter_kind_of_Businesssloan
+
+  - story: Apply StartUp Loan path
+    steps:
+      - intent: apply_loan
+        entities:
+          - content_type: "apply"
+      - slot_was_set:
+          - content_type: "apply"
+      - action: kind_of_loans
+      - intent: apply_Startup_loan
+      - action: utter_kind_of_StartUp_loan
+
+#  - story: Apply StartUp Loan
+#    steps:
+#      - intent: apply_Startup_loan
+#      - action: utter_kind_of_StartUp_loan
+
+  - story: handle_unrecognized_intent
+    steps:
+      - intent: some_unrecognized_intent
+      - action: action_apologize
+
+
+  - story: Get Loan Status
+    steps:
+      - intent: status_efundzz_loan
+        entities:
+          - content_type: "status"
+      - action: action_personal_loan_status
+
+
+
+  #  - story: Status loan path
+#    steps:
+#      - intent: status_efundzz_loan
+#        entities:
+#          - content_type: "status"
+#      - action: personal_loan_status_form
+#      - active_loop: personal_loan_status_form
+
+
+  #  - story: Status loan path
+#    steps:
+#      - intent: status_efundzz_loan
+#        entities:
+#          - content_type: "status"
+#      - slot_was_set:
+#          - content_type: "status"
+##      - action: utter_status_loans
+#      - action: personal_loan_status_form
+#      - active_loop: personal_loan_status_form
+#      - slot_was_set:
+#          - phone_number: "phone_number"
+#      - slot_was_set:
+#          - aadhar_number: "aadhar_number"
+#      - slot_was_set:
+#          - pan_number: "pan_number"
+#      - action: action_personal_loan_status
+
+#  - story: Check personal loan status
+#    steps:
+#      - intent: personal_loan_status
+#      - action: personal_loan_status_form
+#      - action: action_personal_loan_status
+
+
+
+  #      - action: utter_greet
+
+#  - story: happy path
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: mood_great
+#      - action: utter_happy
+#  #
+#  - story: sad path 1
+#    steps:
+#      - intent: greet
+#      - action: action_custom
+#      - intent: mood_unhappy
+#      - action: utter_cheer_up
+#      - action: utter_did_that_help
+#      - intent: affirm
+#      - action: utter_happy
+#
+#  - story: sad path 2
+#    steps:
+#      - intent: greet
+#      - action: action_custom
+#      - intent: mood_unhappy
+#      - action: utter_cheer_up
+#      - action: utter_did_that_help
+#      - intent: deny
+#      - action: utter_goodbye
+
+
+
+  #  - story: greet and handle buttons
+  #    steps:
+  #      - intent: greet
+  #      - action: utter_greet
+  ##      - action: action_handle_button
+  #      - action: utter_Thankyou
+
+  #- story: place a order
+  #  steps:
+  #  - intent: greet
+  #  - action: utter_greet
+  #  - intent: mood_great
+  #  - action: utter_happy
+  #  - intent: place_order
+  #  - action: utter_place_order
+  #  - intent: Groceries
+  #  - action: utter_order_Groceries
+
+#  - story: User provides name and phone number
+#    steps:
+#      - intent: greet_with_details
+#      - action: utter_greet_with_details
+#  - story: user inserts a record in message with name and value
+#    steps:
+#      - intent: intent_insert_record
+#      - action: action_insert_record

@@ -1,0 +1,364 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hlo
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - what is my name
+      - do you know my name
+      - tell me name
+      - my name
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - good
+      - fine
+      - ok
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: apply_loan
+    examples: |
+      - Apply Loan
+      - aply loan 
+      - I want to [Apply]{"entity":"apply"} for a loan
+      - [Apply]{"entity":"apply"} loan
+      - [apply]{"entity":"apply"} loan
+      - i Would like to apply loan
+      - guide me to apply loans
+      - How can I [apply]{"entity":"apply"} for a loan?
+      - What are the requirements to [apply]{"entity":"apply"} for a loan?
+      - Can you [help]{"entity":"apply"} me for a loan?
+      - I'm interested in getting a [loan]{"entity":"apply"}, what do I need to do?
+      - Where can I apply loan [application]{"entity":"apply"}? 
+      - options
+      - loan
+      - laon
+      - lon
+      - menu
+      - loan options
+      - Need a loan info
+      - loan process
+      - show me menu options
+      
+
+  - intent: apply_personal_loan
+    examples: |
+      - apply to personal loan
+      - i want to apply [Personal](personal_loan) loan
+      - how can i apply personal loan
+      - will you apply PERSONAL LOAN to me
+      - guide me to apply personal loan
+      - how can we apply personal loan
+      - Select1 loan
+      - persnl loan
+      - Persnl
+      - PERSNL  
+      - 111
+      - 111111
+      - one
+      - option1
+      - apply [option1](personal_loan)
+      - apply on [option 1](personal_loan)
+      - [option1](personal_loan) option 1
+      - OPTION1 [OPTION1](personal_loan)
+      - select [option1](personal_loan)
+      - apply for [first](personal_loan) option
+      - enable [FIRST](personal_loan) option
+      - Enable 1
+      - set for [1](personal_loan)
+      - set1 [set1](personal_loan)
+      - SET1 [SET1](personal_loan)
+      - guide [Guide]{"entity":"content_type"} me option1  loans
+      - What documents do I need to provide to [apply]{"entity":"content_type"}personal for a loan?
+      - [Guide]{"entity":"content_type"} me to persnl loans
+      - [Help]{"entity":"content_type"} PERSNL loans
+      - [help me]{"entity":"content_type"}  in loans
+      - [Process]{"entity":"content_type"} Loan
+      - PERSNL[loan]{"entity":"content_type"}
+      - persnl [lon]{"entity":"content_type"}
+
+  - intent: apply_Business_loan
+    examples: |
+      - apply to business  loan
+      - i want to apply [Business](business_loan) loan
+      - how can i apply business loan
+      - will you apply BUSINESS LOAN to me
+      - guide me to apply business loan
+      - how can we apply business loan
+      - Select2 loan
+      - busins loan
+      - Busines lon
+      - BUSINzz lon
+      - businss loan
+      - apply [businessLoan(business_loan)
+      - i want to apply [business](business_loan) loan
+      - how can i apply [Business](business_loan) loan
+      - will you apply Business loan to me
+      - guide me to apply Business loan
+      - how can we apply Business loan
+      - Enable two
+      - Enable 2
+      - business loan
+      - 22222
+      - Second option
+      - Two
+      - option2
+      - option 2
+      - select OPTION2
+      - apply businzz lon                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      - SET 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+      - SET2
+      - set2
+      - Set2
+
+  - intent: apply_Startup_loan
+    examples: |
+      - apply to startup(startup_loan)  loan
+      - i want to apply [STARTUP](startup_loan) loan
+      - how can i apply [StatUP](startup_loan) loan
+      - will you apply STATUP(startup_loan) LOAN to me
+      - guide me to apply startup(startup_loan) loan
+      - how can we apply STAtup(startup_loan) loan
+      - Select3 loan
+      - statup loan
+      - Stup lon
+      - STATUP lon
+      - STARtUp loan
+      - apply [StartUp](startup_loan)
+      - i want to apply [statup](business_loan) loan
+      - how can i apply [STATUP](business_loan) loan
+      - will you apply StartUp loan to me
+      - guide me to apply Startup loan
+      - how can we apply StartUp loan
+      - Enable Three
+      - Enable three
+      - StatUp loan
+      - 33
+      - THird option
+      - third
+      - option3
+      - option 3
+      - select OPTION3
+      - apply                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      - SET 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+      - SET3
+      - set3
+      - Set3  
+
+  - intent: status_efundzz_loan
+    examples: |
+      - what is my  [status]{"entity":"content_type"} of  efundzz loans
+      - [status]{"entity":"content_type"} of efundzz loans
+      - check [status]{"entity":"content_type"} of efundzz loans
+      - check [status]{"entity":"content_type"}
+      - Loan status [update]{"entity":"content_type"}?
+      - My loan status?
+      - is my loan [Approved]{"entity":"content_type"} yet?
+      - Any loan [updates]{"entity":"content_type"}?
+      - Loan [progress]{"entity":"content_type"}?
+      - Status of my loan?
+      - Loan [approval]{"entity":"content_type"} status?
+      - Loan [decision]{"entity":"content_type"}?
+      - Check loan status.
+      - Loan [review]{"entity":"content_type"} status?
+
+#  - intent: inform_aadharnumber
+#    examples: |
+#      - My Aadhaar number is [1234 5678 9012](aadhar_number)
+#      - Aadhar number: [9876 5432 1098](aadhar_number)
+#
+#  - intent: inform_phonenumber
+#    examples: |
+#      - My Phone number is [1234567890](phone_number)
+#      - Mobile number: [9879541098](phone_number)
+#      - Phone number:[8894864673](phone_number)
+#
+#  - intent: inform_pan number
+#    examples: |
+#      - My Pan number is [JGHTG0984C](pan_number)
+#      - Pan number: [PTHTG0984C](pan_number)
+    
+
+
+  #
+  #- intent: place_order
+  #  examples: |
+  #    - I'd like to order
+  #    - Can I get a order?
+  #    - I'd like to purchase
+  #    - add a product
+  #    - I need to order
+  #    - Can you deliver
+
+  #- intent: Groceries
+  #  examples: |
+  #    - i want to order [2 ](quantity) litres of [milk](item)
+  #    - I'd like to order [25kg](quantity) of rice(product)
+  #    - I want to order [5 bananas](quantity) and [2 liters of milk](item).
+  #    - Can you please add [3 tomatoes](quantity) and [1 loaf of bread](quantity) to my order?
+  #    -  add pasta, canned soup, and frozen vegetables to my cart.
+  #    - Do you have organic milk in stock?
+  #    - Can you check if you have any fresh cilantro available
+  #    - Is the brand of peanut(product) butter I usually buy in stock
+  #    - I need gluten-free bread(product) and lactose-free milk(product)
+  #    - Can you recommend some vegan-friendly options in the frozen food section?
+  #    - Do you have any organic or locally sourced produce
+
+#  - intent: greet_with_details
+#    examples: |
+#      - My name is [qwertyuioplkjhgfdsazxcvbnm](name) and my number is [1234559667](phone_number).
+#      - My name is [abcdefghijklmnopqrstuvwxyz](name) and my number is [1234559667](phone_number).
+#      - My name is [smith](name) and my number is [1234559667](phone_number).
+#      - My name is [m](name) and my number is [1234559667](phone_number).
+#      - My name is [hul](name) and my number is [1234559667](phone_number).
+#      - My name is [bran](name) and my number is [1234559667](phone_number).
+#      - Call me [Alice](name), my number is [9876543210](phone_number).
+#      - My name is [NarNaaNasNaiNamNahNauNalNau](name) and my number is [1234559667](phone_number).
+#      - Hi, I'm [Michael](name). You can reach me at [555-1234](phone_number).
+#      - People usually call me [Alex](name) and my number is [9998887777](phone_number).
+#      - The name's [Jennifer](name), and you can contact me at [444-5678](phone_number).
+#      - I go by the name [Sarah](name), and my number is [1112223333](phone_number).
+#      - I'm known as [David](name), and my number is [2223334444](phone_number).
+#      - Please refer to me as [Emily](name). You can reach me at [3334445555](phone_number).
+#      - Name's [Matthew](name), nice to meet you. My number is [4445556666](phone_number).
+#      - Just call me [Olivia](name), and you can contact me at [6667778888](phone_number).
+#      - You can call me by my name, [Andrew](name). My number is [7778889999](phone_number).
+#      - Hi, I'm [Jessica](name), and you can reach me at [8889990000](phone_number).
+#      - My name is [Daniel](name) and my number is [1234567890](phone_number).
+#      - Call me [Sophia](name), my number is [9876543210](phone_number).
+#      - Hi, I'm [James](name). You can reach me at [555-1234](phone_number).
+#      - People usually call me [Isabella](name) and my number is [9998887777](phone_number).
+#      - The name's [Oliver](name), and you can contact me at [444-5678](phone_number).
+#      - I go by the name [Ava](name), and my number is [1112223333](phone_number).
+#      - I'm known as Mason(name), and my number is 2223334444(phone_number).
+#      - Please refer to me as [Emma](name). You can reach me at [3334445555](phone_number).
+#      - Name's [William](name), nice to meet you. My number is [4445556666](phone_number).
+#      - Just call me [Sophia](name), and you can contact me at [6667778888](phone_number).
+#      - You can call me by my name, [Ethan](name). My number is [7778889999](phone_number).
+#      - Hi, I'm [Olivia](name), and you can reach me at [8889990000](phone_number).
+#      - My name is [Jacob](name) and my number is [1234567890](phone_number).
+#      - Call me [Emily](name), my number is [9876543210](phone_number).
+#      - Hi, I'm [Matthew](name). You can reach me at [555-1234](phone_number).
+#      - People usually call me [Abigail](name) and my number is [9998887777](phone_number).
+#      - The name's [Elijah](name), and you can contact me at [444-5678](phone_number).
+#      - I go by the name [Mia](name), and my number is [1112223333](phone_number).
+#      - I'm known as [Daniel](name), and my number is [2223334444](phone_number).
+#      - Please refer to me as [Charlotte](name). You can reach me at [3334445555](phone_number).
+#      - Name's [Christopher](name), nice to meet you. My number is [4445556666](phone_number).
+#      - Just call me [Emma](name), and you can contact me at [6667778888](phone_number).
+#      - You can call me by my name, [Carter](name). My number is [7778889999](phone_number).
+#      - Hi, I'm [Avery](name), and you can reach me at [8889990000](phone_number).
+#      - My name is [Alexander](name) and my number is [1234567890](phone_number).
+#      - Call me [Scarlet](name), my number is [9876543210](phone_number).
+#      - Hi, I'm [Samuel](name). You can reach me at [555-1234](phone_number).
+#      - People usually call me [Aria](name) and my number is [9998887777](phone_number).
+#      - The name's [Sebastian](name), and you can contact me at [444-5678](phone_number).
+#      - I go by the name [Grace](name), and my number is [1112223333](phone_number).
+#      - I'm known as [David](name), and my number is [2223334444](phone_number).
+#      - Please refer to me as [Hannah](name). You can reach me at [3334445555](phone_number).
+#      - Name's [Logan](name), nice to meet you. My number is [4445556666](phone_number).
+#      - Just call me [Amelia](name), and you can contact me at [6667778888](phone_number).
+#      - You can call me by my name, [Christopher](name). My number is [7778889999](phone_number).
+#
+#  - intent: intent_insert_record
+#    examples: |
+#      - Insert a record with the name [qwertyuioplkjhgfdsazxcvbnm](record_name) and value [50](record_value).
+#      - Please add a record named [abcdefghijklmnopqrstuvwxyz](record_name) with the value [1000](record_value).
+#      - I want to insert a record with the name [Narasimhulu](record_name) and value [9.99](record_value).
+#      - Add a record called [abcdefghijklmnopqrstuvwxyz](record_name) with the value [500](record_value).
+#      - Can you insert a record named [RamLeela](record_name) with the value [10000](record_value)?
+#      - I need to add a record with the name [RahulKadimisetty](record_name) and value [40](record_value).
+#      - Please insert a record with the name [rakeshRoyal](record_name) and value [19.99](record_value).
+#      - Add a record called [pratheeshka](record_name) with the value [5000](record_value).
+#      - Insert a record with the name [smith](record_name) and value [5.99](record_value).
+#      - I want to add a record named [NarNaaNasNaiNamNahNauNalNau](record_name) with the value [2500](record_value).
+#      - Please insert a record with the name [MichaelHyde](record_name) and value [2](record_value).
+#      - Insert a record called [MatthewHidden](record_name) with the value [49.99](record_value).
+#      - Add a record named [HanumanDasShetty](record_name) with the value [500](record_value).
+#      - Insert a record with the name [ganeshKumarYadav](record_name) and value [10](record_value).
+#      - Please add a record called [Fernandus](record_name) with the value [5000](record_value).
+#      - Can you insert a record with the name [fahadfasil](record_name) and value [30](record_value)?
+#      - I need to add a record with the name [EfraAhmedh A](record_name) and value [8.99](record_value).
+#      - Insert a record named [David](record_name) with the value [1500](record_value).
+#      - Add a record with the name [cammundaLeo](record_name) and value [3](record_value).
+#      - Insert a record called [AkashyaPatra](record_name) with the value [29.99](record_value).

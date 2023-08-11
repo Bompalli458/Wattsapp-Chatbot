@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-aadhar_number",
+      "2": "I-aadhar_number",
+      "3": "L-aadhar_number",
+      "4": "U-aadhar_number",
+      "5": "B-content_type",
+      "6": "I-content_type",
+      "7": "L-content_type",
+      "8": "U-content_type",
+      "9": "B-pan_number",
+      "10": "I-pan_number",
+      "11": "L-pan_number",
+      "12": "U-pan_number",
+      "13": "B-phone_number",
+      "14": "I-phone_number",
+      "15": "L-phone_number",
+      "16": "U-phone_number",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-aadhar_number": 1,
+      "I-aadhar_number": 2,
+      "L-aadhar_number": 3,
+      "U-aadhar_number": 4,
+      "B-content_type": 5,
+      "I-content_type": 6,
+      "L-content_type": 7,
+      "U-content_type": 8,
+      "B-pan_number": 9,
+      "I-pan_number": 10,
+      "L-pan_number": 11,
+      "U-pan_number": 12,
+      "B-phone_number": 13,
+      "I-phone_number": 14,
+      "L-phone_number": 15,
+      "U-phone_number": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

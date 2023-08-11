@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+#- rule: Say Sorry Anytime
+#  steps:
+#    - intent: unknown_intent
+#    - action: action_default_fallback
+#
+#- rule: Say efundzz loan link anytime
+#  steps:
+#    - intent: apply_efundzz_loan
+#    - action: utter_apply_loans
+#
+#- rule: Say Status of User Anytime
+#  steps:
+#    - intent: status_efundzz_loan
+#    - action: action_personal_loan_status

@@ -1,0 +1,212 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - apply_loan
+  - status_efundzz_loan
+  - apply_personal_loan
+  - apply_Business_loan
+  - apply_Startup_loan
+#  - greet_with_details
+#  - intent_insert_record
+
+entities:
+  - content_type
+  - apply
+  - personal_loan
+  - business_loan
+  - startup_loan
+#  - aadhar_number
+#  - phone_number
+#  - pan_number
+#  - name
+#  - phone_number
+
+slots:
+  content_type:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: content_type
+  apply:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: apply
+
+  personal_loan:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: personal_loan
+  business_loan:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: business_loan
+  startup_loan:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: startup_loan
+
+#  aadhar_number:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: aadhar_number
+#  phone_number:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: phone_number
+#  pan_number:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: pan_number
+
+#  name:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: name
+#  phone_number:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: phone_number
+#
+#  record_name:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: record_name
+#
+#  record_value:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: record_value
+
+actions:
+#   - action_custom
+   - action_personal_loan_status
+   - action_greet_based_on_time
+   - kind_of_loans
+   - action_gupshup_interaction
+   - action_apologize
+#  - action_extract_details
+#  - action_insert_record
+#  - action_submit
+
+responses:
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_name:
+    - text: "my name is Purview Bot."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_Thankyou:
+    - text: "Thank You"
+#
+#  utter_personal_loan:
+#    - text: "1. Personal Loan"
+#
+#  utter_startup_loan:
+#    - text: "1. StartUp Loan"
+#
+#  utter_business_loan:
+#    - text: "1. Business Loan"
+
+  utter_apply_personal_loans:
+    - text: Apply for Personal Loan(https://www.efundzz.com/loanAuth?loanType=PersonalLoan&brand=EF) here
+
+  utter_kind_of_Businesssloan:
+    - text: Apply for Business Loan(https://www.efundzz.com/loanAuth?loanType=BusinessLoan&brand=EF) here
+
+  utter_kind_of_StartUp_loan:
+    - text: Apply for StartUp Loan(https://www.efundzz.com/loanAuth?loanType=StartupLoan&brand=EF) here
+
+#  utter_greet:
+#    - text: "Hello! How can I assist you today?"
+#      buttons:
+#        - title: "Status of EFundzz Loan "
+#          payload: "/check_status"
+#        - title: "Apply EFundzz Loan"
+#          payload: "/apply_loan"
+
+
+
+#  utter_status_loans:
+#    - text: "Status of  effundzz : Success"
+
+#  utter_place_order:
+#    - text: " Your order has been placed:  {quantity} of {item}."
+#
+#  utter_order_Groceries:
+#    - text: "{quantity} of {item} added successfully. Anything else to order?"
+#
+#  utter_thanks:
+#    - text: "Thank you "
+#
+#  utter_greet_with_details:
+#    - text: "Hello {name}! Your phone number is {phone_number}. How can I assist you today?"
+
+
+
+#rules:
+#  - rule: Place order
+#    steps:
+#      - intent: place_order
+#      - action: utter_place_order
+#
+#stories:
+#  - story: Greet and Add groceries
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: Groceries
+#      - action: utter_order_Groceries
+#
+#  - story: place order
+#    steps:
+#      - intent: place_order
+#      - action:  utter_place_order
+
+
+#forms:
+#  personal_loan_status_form:
+#    required_slots:
+#      aadhar_number:
+#        - type: from_entity
+#          entity: aadhar_number
+#      pan_number:
+#        - type: from_entity
+#          entity: pan_number
+#      mobile_number:
+#        - type: from_entity
+#          entity: mobile_number
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

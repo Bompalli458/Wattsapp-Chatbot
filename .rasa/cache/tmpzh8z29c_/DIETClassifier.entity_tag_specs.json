@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-business_loan",
+      "2": "I-business_loan",
+      "3": "L-business_loan",
+      "4": "U-business_loan",
+      "5": "B-content_type",
+      "6": "I-content_type",
+      "7": "L-content_type",
+      "8": "U-content_type",
+      "9": "B-personal_loan",
+      "10": "I-personal_loan",
+      "11": "L-personal_loan",
+      "12": "U-personal_loan",
+      "13": "B-startup_loan",
+      "14": "I-startup_loan",
+      "15": "L-startup_loan",
+      "16": "U-startup_loan",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-business_loan": 1,
+      "I-business_loan": 2,
+      "L-business_loan": 3,
+      "U-business_loan": 4,
+      "B-content_type": 5,
+      "I-content_type": 6,
+      "L-content_type": 7,
+      "U-content_type": 8,
+      "B-personal_loan": 9,
+      "I-personal_loan": 10,
+      "L-personal_loan": 11,
+      "U-personal_loan": 12,
+      "B-startup_loan": 13,
+      "I-startup_loan": 14,
+      "L-startup_loan": 15,
+      "U-startup_loan": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

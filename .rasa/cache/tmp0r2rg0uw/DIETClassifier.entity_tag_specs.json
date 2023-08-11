@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-apply",
+      "2": "I-apply",
+      "3": "L-apply",
+      "4": "U-apply",
+      "5": "B-business_loan",
+      "6": "I-business_loan",
+      "7": "L-business_loan",
+      "8": "U-business_loan",
+      "9": "B-content_type",
+      "10": "I-content_type",
+      "11": "L-content_type",
+      "12": "U-content_type",
+      "13": "B-personal_loan",
+      "14": "I-personal_loan",
+      "15": "L-personal_loan",
+      "16": "U-personal_loan",
+      "17": "B-startup_loan",
+      "18": "I-startup_loan",
+      "19": "L-startup_loan",
+      "20": "U-startup_loan",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-apply": 1,
+      "I-apply": 2,
+      "L-apply": 3,
+      "U-apply": 4,
+      "B-business_loan": 5,
+      "I-business_loan": 6,
+      "L-business_loan": 7,
+      "U-business_loan": 8,
+      "B-content_type": 9,
+      "I-content_type": 10,
+      "L-content_type": 11,
+      "U-content_type": 12,
+      "B-personal_loan": 13,
+      "I-personal_loan": 14,
+      "L-personal_loan": 15,
+      "U-personal_loan": 16,
+      "B-startup_loan": 17,
+      "I-startup_loan": 18,
+      "L-startup_loan": 19,
+      "U-startup_loan": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
